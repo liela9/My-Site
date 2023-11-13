@@ -12,6 +12,7 @@ h1 {
 }
 
 h2 {
+    margin: 0;
     font-size: 2.5rem;
     color: #3A4D39;
 }
@@ -50,25 +51,7 @@ hr {
 }
 
 .about-me {
-    margin-bottom: 140px;
-}
-
-.top-cloud {
-    position: absolute;
-    right: 500px;
-    top: 50px;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 400px;
-    bottom: 800px;
-}
-
-.tree {
-    margin: 100px auto 50px auto;
-    position: relative;
-    right: 30px;
+    margin-bottom: 100px;
 }
 
 .top-container {
@@ -76,8 +59,30 @@ hr {
     padding-top: 100px;
 }
 
+.top-cloud {
+    position: absolute;
+    right: 25%;
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 20%;
+    bottom: 750px;
+}
+
+.tree {
+    margin: 100px auto 50px auto;
+    position: relative;
+    right: 2%;
+}
+
 .middle-container {
     margin: 100px 0;
+}
+
+.skills {
+    margin: 0 0 100px;
 }
 
 .bottom-container {
