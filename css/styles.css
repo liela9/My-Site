@@ -1,3 +1,14 @@
+/* Navigation Bar */
+
+section {
+    background-color: #739072;
+    padding: 4% 12%;
+    font-family: "Montserrat-Light";
+    text-align: right;
+}
+
+/* Body - General */
+
 body {
     margin: 0;
     background-color: #D2E3C8;
@@ -5,40 +16,27 @@ body {
     font-family: Copperplate, Papyrus, fantasy;
 }
 
-h1 {
-    margin: 50px auto 0 auto;
-    font-size: 5.625rem;
-    color: #3A4D39;
-}
-
-h2 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #3A4D39;
-}
-
-h3 {
-    font-size: 2rem;
-    color: #3A4D39;
-}
-
-p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a:hover {
     color: #3A4D39;
 }
 
 a {
-    font-size: 1.5rem;
     margin: 0 10px 30px;
     text-decoration: none;
+    color: #D2E3C8;
 }
 
-a:hover {
-    color: #ECE3CE;
-}
-
+a,
 span {
     font-size: 1.5rem;
-    color: #3A4D39;
 }
 
 hr {
@@ -50,8 +48,18 @@ hr {
     margin: 100px auto;
 }
 
-.about-me {
-    margin-bottom: 100px;
+.lg-heading {
+    margin: 50px auto 0 auto;
+    font-size: 5.625rem;
+}
+
+.md-heading {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.sm-heading {
+    font-size: 2rem;
 }
 
 .top-container {
@@ -77,13 +85,77 @@ hr {
     right: 2%;
 }
 
+@media (max-width: 900px) {
+    .tree {
+        width: 600px;
+        position: relative;
+        right: 4%;
+    }
+
+    .top-cloud {
+        position: absolute;
+        right: 0%;
+    }
+
+    .bottom-cloud {
+        position: absolute;
+        left: 2%;
+        bottom: 535px;
+    }
+}
+
+@media (max-width: 550px) {
+    .tree {
+        width: 450px;
+        position: relative;
+        right: 2%;
+    }
+
+    .bottom-cloud {
+        position: absolute;
+        left: 2%;
+        bottom: 420px;
+    }
+}
+
+@media (max-width: 445px) {
+    .lg-heading {
+        font-size: 3rem;
+    }
+
+    .md-heading {
+        font-size: 2rem;
+    }
+
+    .top-cloud {
+        width: 120px;
+    }
+
+    .bottom-cloud {
+        width: 100px;
+        position: absolute;
+        bottom: 280px;
+    }
+
+    .tree {
+        width: 300px;
+        margin: 100px 0 0;
+    }
+}
+
 .middle-container {
     margin: 100px 0;
 }
 
-.skills {
+.about-me {
+    margin-bottom: 100px;
+}
+
+.skill {
     margin: 0 0 100px;
 }
+
+/* Footer */
 
 .bottom-container {
     background-color: #739072;
